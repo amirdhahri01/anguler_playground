@@ -51,7 +51,7 @@ class Employee {
     get empid() {
         return this.id;
     }
-    set setId(id) {
+    set empid(id) {
         this.id = id;
     }
     static getEmployeeCount() {
@@ -65,5 +65,6 @@ class Manager extends Employee {
     }
 }
 let amir = new Manager("An administrator", 100, "dhah", "qfqfq");
+amir.empid = 200;
 console.log(amir);
 console.log(Employee.getEmployeeCount());
