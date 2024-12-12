@@ -64,5 +64,14 @@ class Employee{
     }
 }
 
-let amir : Employee = new Employee(100 , "dhah" , "qfqfq");
+class Manager extends Employee{
+    role : string
+    constructor(role : string , id : number , name : string , address:string){
+        super(id ,name , address );
+        this.role = role;
+    }
+}
+
+let amir : Manager = new Manager("An administrator" , 100 , "dhah" , "qfqfq");
+
 console.log(amir);

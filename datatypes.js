@@ -49,5 +49,11 @@ class Employee {
         this.address = address;
     }
 }
-let amir = new Employee(100, "dhah", "qfqfq");
+class Manager extends Employee {
+    constructor(role, id, name, address) {
+        super(id, name, address);
+        this.role = role;
+    }
+}
+let amir = new Manager("An dministrator", 100, "dhah", "qfqfq");
 console.log(amir);
