@@ -4,8 +4,9 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html',  
+  styleUrl: './app.component.scss',
+  styles:[`h1{color : red;}`]
 })
 export class AppComponent {
   title = 'hoteninventoryapp';
