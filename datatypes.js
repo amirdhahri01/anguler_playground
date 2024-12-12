@@ -17,3 +17,12 @@ class Car {
 }
 let car = new Car(Fruits.Banana);
 car.printName();
+let employees = new Array();
+employees.push({
+    name: "Amir Dhahri",
+    age: 20,
+    country: "Tunisie"
+});
+employees.forEach(employee => {
+    console.log(employee);
+});
