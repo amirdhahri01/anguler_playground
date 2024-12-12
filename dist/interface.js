@@ -25,3 +25,4 @@
 // }
 // let amir : User = {name : "Amir"};
 // console.log(amir);
+//# sourceMappingURL=interface.js.map

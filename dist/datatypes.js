@@ -72,3 +72,4 @@
 // amir.empid = 200
 // console.log(amir);
 // console.log(Employee.getEmployeeCount());
+//# sourceMappingURL=datatypes.js.map
