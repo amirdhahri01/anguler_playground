@@ -50,7 +50,4 @@ class Employee {
     }
 }
 let amir = new Employee(100, "dhah", "qfqfq");
-amir.id = 100;
-amir.name = "AmirDhahri";
-amir.address = "amir@adazd";
 console.log(amir);

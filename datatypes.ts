@@ -54,9 +54,9 @@
 // console.log(getItem(nums, 2));
 
 class Employee{
-    id! : number;
-    name! : string;
-    address! : string
+    private id! : number;
+    private name! : string;
+    private address! : string
     constructor(id : number , name : string , address:string){
         this.id = id;
         this.name = name;
@@ -65,7 +65,4 @@ class Employee{
 }
 
 let amir : Employee = new Employee(100 , "dhah" , "qfqfq");
-amir.id = 100;
-amir.name = "AmirDhahri";
-amir.address = "amir@adazd";
 console.log(amir);
