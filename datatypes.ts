@@ -62,6 +62,17 @@ class Employee{
         this.name = name;
         this.address = address;
     }
+    get empid(){
+        return this.id;
+    }
+
+    set setId(id : number){
+        this.id = id;
+    }
+        
+    static getEmployeeCount(){
+        return 50;
+    }
 }
 
 class Manager extends Employee{
@@ -75,3 +86,4 @@ class Manager extends Employee{
 let amir : Manager = new Manager("An administrator" , 100 , "dhah" , "qfqfq");
 
 console.log(amir);
+console.log(Employee.getEmployeeCount());
