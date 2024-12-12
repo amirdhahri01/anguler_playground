@@ -3,7 +3,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ RoomsComponent],
+  imports: [RoomsComponent ],
   templateUrl: './app.component.html',  
   styleUrl: './app.component.scss',
 })
