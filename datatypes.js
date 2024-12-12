@@ -55,5 +55,5 @@ class Manager extends Employee {
         this.role = role;
     }
 }
-let amir = new Manager("An dministrator", 100, "dhah", "qfqfq");
+let amir = new Manager("An administrator", 100, "dhah", "qfqfq");
 console.log(amir);
