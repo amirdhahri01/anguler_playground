@@ -41,3 +41,14 @@ employees.push({
 employees.forEach(employee => {
     console.log(employee);
 })
+
+function getItem<T> (items : T[] , i : number) : T{
+    if(i < 0 || i >= items.length)return {} as any;
+    return items[i];
+}
+
+
+let items : string[] = ["Amir" , "Dhahri"];
+let nums : number[] = [1 , 2 , 3 ,  4 ,5 ,6 ,7 ,8,9];
+console.log(getItem(items , 1));
+console.log(getItem(nums, 2));

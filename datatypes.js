@@ -26,3 +26,12 @@ employees.push({
 employees.forEach(employee => {
     console.log(employee);
 });
+function getItem(items, i) {
+    if (i < 0 || i >= items.length)
+        return {};
+    return items[i];
+}
+let items = ["Amir", "Dhahri"];
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(getItem(items, 1));
+console.log(getItem(nums, 2));
