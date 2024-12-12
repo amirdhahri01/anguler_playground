@@ -11,3 +11,7 @@ var users : User = {
     id : 102,
     email : "AmirDhahri@gmail.com"    
 }
+
+class Employee implements User{
+    
+}

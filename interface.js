@@ -5,3 +5,5 @@ var users = {
     id: 102,
     email: "AmirDhahri@gmail.com"
 };
+class Employee {
+}

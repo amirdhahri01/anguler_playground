@@ -53,37 +53,37 @@
 // console.log(getItem(items , 1));
 // console.log(getItem(nums, 2));
 
-class Employee{
-    private id! : number;
-    private name! : string;
-    private address! : string
-    constructor(id : number , name : string , address:string){
-        this.id = id;
-        this.name = name;
-        this.address = address;
-    }
-    get empid(){
-        return this.id;
-    }
+// class Employee{
+//     private id! : number;
+//     private name! : string;
+//     private address! : string
+//     constructor(id : number , name : string , address:string){
+//         this.id = id;
+//         this.name = name;
+//         this.address = address;
+//     }
+//     get empid(){
+//         return this.id;
+//     }
 
-    set empid(id : number){
-        this.id = id;
-    }
+//     set empid(id : number){
+//         this.id = id;
+//     }
 
-    static getEmployeeCount(){
-        return 50;
-    }
-}
+//     static getEmployeeCount(){
+//         return 50;
+//     }
+// }
 
-class Manager extends Employee{
-    role : string
-    constructor(role : string , id : number , name : string , address:string){
-        super(id ,name , address );
-        this.role = role;
-    }
-}
+// class Manager extends Employee{
+//     role : string
+//     constructor(role : string , id : number , name : string , address:string){
+//         super(id ,name , address );
+//         this.role = role;
+//     }
+// }
 
-let amir : Manager = new Manager("An administrator" , 100 , "dhah" , "qfqfq");
-amir.empid = 200
-console.log(amir);
-console.log(Employee.getEmployeeCount());
+// let amir : Manager = new Manager("An administrator" , 100 , "dhah" , "qfqfq");
+// amir.empid = 200
+// console.log(amir);
+// console.log(Employee.getEmployeeCount());
