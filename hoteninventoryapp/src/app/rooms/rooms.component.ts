@@ -4,7 +4,7 @@ import { DBService } from '../db.service';
 
 @Component({
   selector: 'app-rooms',
-  imports: [NgFor],
+  imports: [],
   standalone: true,
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss'],

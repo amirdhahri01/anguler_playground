@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, input } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
-import { SummaryPipe } from '../pipes/summary.pipe';
 @Component({
   selector: 'app-course',
-  imports: [FormsModule , CommonModule , SummaryPipe],
+  imports: [FormsModule , CommonModule],
   templateUrl: './course.component.html',
   styleUrl: './course.component.scss'
 })
