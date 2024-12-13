@@ -11,4 +11,5 @@ import { CourseComponent } from './course/course.component';
 
 export class AppComponent {
   title = 'hoteninventoryapp';
+  
 }

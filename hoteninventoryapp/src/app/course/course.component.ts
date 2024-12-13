@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { SummaryPipe } from '../pipes/summary.pipe';
 @Component({
@@ -38,5 +38,6 @@ export class CourseComponent {
   //   salary : 5000,
   //   hiringDate : new Date(2019 , 1 , 1)
   // }
-  title : string = "Bienvenue Amir Dhahri"
+  // @Input() title : string = "Bienvenue Amir Dhahri"
+  @Input() isFavorite : boolean = false;
 }
