@@ -11,3 +11,19 @@
         </div>
     </div>
 </div>
+<button type="button" class="btn btn-primary"  [class.active]="isActive">
+    Primary
+</button>
+<button [style.backgroundColor]="isActive? 'yellow' : 'blue'">iTshare</button>
+<hr>
+<button (click)="methodName()"></button>
+<hr>
+<div (click)="divClick($event)">
+    Hello World
+    <button (click)="btnClick($event)">
+        Navigate
+    </button>
+</div>
+<hr>
+<input #firstname [value]="nameval" type="text" (keyup)="onkeyUp(firstname.value)">
+<div class="show">{{nameval}}</div>
