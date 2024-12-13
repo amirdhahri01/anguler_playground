@@ -11,6 +11,7 @@ import { Book } from '../models/book.model';
 export class BookComponent {
     model:BookRepository = new BookRepository();
     book : Book | undefined = this.model.getIDBook(1);
+    disabled : boolean = true; 
     getClassBinding(id:number) : string{
       this.book  =  this.model.getIDBook(id);
       return (this?.book?.price != undefined && this.book.price >= 20) ? "bg-primary" : "bg-info";
