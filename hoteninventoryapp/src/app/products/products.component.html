@@ -1,2 +1,5 @@
-<h1 class="text-danger">[innerText]="addProduct"</h1>
-<button class="btn btn-secondary" [disabled]="addProduct">Add product</button>
+<!-- <h1 class="text-danger">[innerText]="addProduct"</h1> -->
+<button class="btn btn-secondary" [disabled]="addProduct" (click)="onCLick()">Add product</button>
+<label for="">Product Name:</label>
+<input type="text" name="form-control" id="" (input)="onUpdateProductName($event)">
+<div>{{enteredValue}}</div>
