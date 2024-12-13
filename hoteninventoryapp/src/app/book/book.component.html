@@ -1,5 +1,17 @@
 <h1>Books List</h1>
-<div>
+<div [class]="getClassBinding(2)">
+    <h3>
+        {{book?.name}}
+    </h3>
+</div>
+
+<div [class]="getClassBinding(0)">
+    <h3>
+        {{book?.name}}
+    </h3>
+</div>
+
+<div [class]="getClassBinding(1)">
     <h3>
         {{book?.name}}
     </h3>
