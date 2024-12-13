@@ -8,13 +8,14 @@ import { DBService } from '../db.service';
   standalone: true,
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss'],
+  providers:[DBService]
 })
 
 export class RoomsComponent implements OnInit{
   hotelName = "Hilton Hotel"
   courses : string[];
-  constructor(){
-    this.courses =  new DBService().getAll();
+  constructor(dbServic : DBService){
+    this.courses =  dbServic.getAll();
   }
   ngOnInit() : void{
 
