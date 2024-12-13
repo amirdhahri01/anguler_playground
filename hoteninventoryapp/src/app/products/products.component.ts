@@ -1,12 +1,16 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector : "[product]" ,
+    selector : "app-products" ,
     imports : [],
-    template: "<p>Amir Dhahri</p>",
-    styles : ["p{color:red} ; p{font-weight:bold}"]
+    templateUrl: "./products.component.html",
+    styleUrls : ["products.component.scss"]
 })
 
 export class ProductsComponent{
-
+    productId:number = 1;
+    stockStatus:string = "Yes";
+    getStock() : string{
+        return 'Amir Dhari';
+    }
 }
