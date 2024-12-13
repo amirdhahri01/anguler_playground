@@ -1,8 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
+import { SummaryPipe } from '../pipes/summary.pipe';
 @Component({
   selector: 'app-course',
-  imports: [FormsModule],
+  imports: [FormsModule , CommonModule , SummaryPipe],
   templateUrl: './course.component.html',
   styleUrl: './course.component.scss'
 })
@@ -30,10 +32,11 @@ export class CourseComponent {
 //       console.log(this.firstname);
 //       this.nameval = this.firstname;
 //     }
-  isFavorite : boolean = false;
-
-  onFavoriteClick() : void{
-    this.isFavorite = !this.isFavorite;
-    console.log(this.isFavorite);
-  }
+  // employee = {
+  //   fullname : "Amir Dhahri",
+  //   rating : 10,
+  //   salary : 5000,
+  //   hiringDate : new Date(2019 , 1 , 1)
+  // }
+  title : string = "Bienvenue Amir Dhahri"
 }
