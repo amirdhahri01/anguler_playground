@@ -1,4 +1,4 @@
-<div class="container ">
+<!-- <div class="container ">
     <div class="row">
         <div class="col-4 col-md-4 text-primary">
             Column 1
@@ -25,5 +25,22 @@
     </button>
 </div>
 <hr>
-<input #firstname [value]="nameval" type="text" (keyup)="onkeyUp(firstname.value)">
-<div class="show">{{nameval}}</div>
+<input  
+    [(ngModel)]="firstname"
+    type="text" 
+    (keyup.enter)="onkeyUp()"/>
+<div class="show">{{firstname}}</div>
+
+<hr>
+
+<input  
+    type="text" 
+    (keyup.enter)="firstname=$event.target.value || '';onkeyUp(firstname)"/>
+<div class="show">{{firstname}}</div> -->
+
+<!-- <div 
+class="glyphicon" 
+[class.glyphicon-heart]="isFavorite" 
+[class.glyphicon-heart-empty]="!isFavorite"
+aria-hidden="true"
+(click)="onFavoriteClick()"></div> -->
