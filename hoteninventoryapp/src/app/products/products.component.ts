@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector : "app-products" ,
+    selector : "[product]" ,
     imports : [],
-    templateUrl : "./products.component.html",
-    styleUrls : ["./products.component.scss"]
+    template: "<p>Amir Dhahri</p>",
+    styles : ["p{color:red} ; p{font-weight:bold}"]
 })
 
 export class ProductsComponent{
-    
+
 }
