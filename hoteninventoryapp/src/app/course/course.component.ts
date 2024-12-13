@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 export class CourseComponent {
     courseName : string = "Anguler 6"
     imageUrl : string = "https://www.avanse.com/blogs/images/15.jpg"
+    colSpan : number = 3
 }
