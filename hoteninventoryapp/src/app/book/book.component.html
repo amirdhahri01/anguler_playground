@@ -53,6 +53,21 @@
 <ul>
     <li *ngFor="let name of names">{{name}}</li>
 </ul> -->
+<!-- <ul *ngFor="let group of peopleByCountry">
+    <li>
+        {{group.Country}}
+        <ul>
+            <li *ngFor="let name of group.names">
+                {{name.name}}
+            </li>
+        </ul>
+    </li>
+</ul> -->
+
+<button (click)="onAdd()">Add</button>
 <ul>
-    <li></li>
+    <li *ngFor="let course of courses">
+        {{course}}
+        <button (click)="onRemove(course)">Remove</button>
+    </li>
 </ul>

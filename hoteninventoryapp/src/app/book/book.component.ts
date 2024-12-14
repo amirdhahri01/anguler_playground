@@ -57,28 +57,38 @@ export class BookComponent {
   //   this.change.emit();
   // }
   // names : string[] = ["Amir" , "Dhahri"]
-  peopleByCountry : any[] = [
-    { 
-      Country : "Tunisie",
-      names :[
-        {
-          name:"Amir"
-        },
-        {
-          name:"dhahri"
-        }
-      ]
-    },
-    { 
-      Country : "France",
-      names :[
-        {
-          name:"Nizar"
-        },
-        {
-          name:"Far"
-        }
-      ]
-    }
+  // peopleByCountry : any[] = [
+  //   { 
+  //     Country : "Tunisie",
+  //     names :[
+  //       {
+  //         name:"Amir"
+  //       },
+  //       {
+  //         name:"dhahri"
+  //       }
+  //     ]
+  //   },
+  //   { 
+  //     Country : "France",
+  //     names :[
+  //       {
+  //         name:"Nizar"
+  //       },
+  //       {
+  //         name:"Far"
+  //       }
+  //     ]
+  //   }
+  // ]
+  courses : string[] = [
+    "Java" , "Python" , "C++" , "Ruby"
   ]
+  onRemove(course : string){
+    let idx = this.courses.indexOf(course)
+    this.courses.splice(idx , 1);
+  }
+  onAdd(){
+    this.courses.push("Far")
+  }  
 }
