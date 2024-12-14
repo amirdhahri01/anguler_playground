@@ -3,7 +3,9 @@ import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
 import { EventEmitter } from '@angular/core';
+import { interval } from 'rxjs';
 import { InputFormDirective } from '../directives/input-form.directive';
+import { log } from 'node:console';
 type def = {
   id : number,
   courseName : string
@@ -109,4 +111,8 @@ export class BookComponent {
   //   this.defaultView = view;
   // }
   whatcolor = true;
+  obs =  interval(1000).subscribe(a => {
+    console.log(a);
+    
+  })
 }
