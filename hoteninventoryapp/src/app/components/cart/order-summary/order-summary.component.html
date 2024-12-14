@@ -1,1 +1,18 @@
-<p>order-summary works!</p>
+<div class="bg-white shadow-md 
+rounded-xl border p-6 
+flex gap-0 items-center">
+    <h2 class="text-2xl">
+        Order Summary
+    </h2>
+    <div class="flex flex-col gap-4">
+        <div class="flex gap-4">
+            <span class="text-lg">
+                Total
+            </span>
+            <span>
+                {{"$" + total()}}
+            </span>
+        </div>
+        <app-primary-button label="proceed to checkout"></app-primary-button>
+    </div>
+</div>
