@@ -112,9 +112,9 @@ export class BookComponent implements OnInit{
   // }
   whatcolor = true;
   url : string = "https://jsonplaceholder.typicode.com/todos/1"
-  public constructor(){
+  // public constructor(public http:HttpClientModule){
 
-  }
+  // }
   ngOnInit(): void {
     // this.http.get(this.url).subscribe(response => {
     //   console.log(response);
