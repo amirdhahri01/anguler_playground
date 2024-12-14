@@ -13,5 +13,5 @@ import { BookComponent } from './book/book.component';
 
 export class AppComponent {
   title = 'hoteninventoryapp';
-  
+  data:string = "Hello From the othr side"
 }

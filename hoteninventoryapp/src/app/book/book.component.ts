@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BookRepository } from '../models/repository.model';
 import { Book } from '../models/book.model';
 import { CommonModule, NgClass, NgStyle } from '@angular/common';
@@ -52,6 +52,7 @@ export class BookComponent {
   //   console.log("Button clicked");
   // }
 
-  
+  @Input("isFavorite") data : string = "";
+ 
 
 }
