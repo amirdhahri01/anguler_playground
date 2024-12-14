@@ -8,9 +8,9 @@ export class InputFormDirective {
   constructor() { }
 
   @HostListener("focus") onFocus(){
-    window.alert("Focus")
+    console.log("Focus")
   }
   @HostListener("blur") onBlur(){
-    window.alert("Blur")
+    console.log("Blur")
   }
 }
