@@ -8,7 +8,12 @@ import { ProductCardComponent } from "../product-card/product-card.component";
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.scss'
 })
-export class ProductListComponent {
+export class ProductListComponent{
+  async ngOnInit(){
+    const response = await fetch('https://fakestoreapi.com/products/category/electronics');
+    const data = await response.json();
+    this.products.set(data)
+  }
   products = signal<Product[]>([
     {
       id : 1,
