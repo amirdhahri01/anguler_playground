@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Signal, signal } from '@angular/core';
 import { PrimaryButtonComponent } from "../primary-button/primary-button.component";
 
 @Component({
@@ -9,6 +9,7 @@ import { PrimaryButtonComponent } from "../primary-button/primary-button.compone
 })
 export class HeaderComponent {
   title = signal("Angular Ecommerce")
+  cart = signal("Cart")
   showBtnClick(){
     console.log("Clicked");
   }
