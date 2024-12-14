@@ -5,10 +5,11 @@ import { ProductsComponent } from './products/products.component';
 import { BookComponent } from './book/book.component';
 import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ProductListComponent } from "./components/product-list/product-list.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RoomsComponent , CourseComponent , ProductsComponent , BookComponent , HeaderComponent],
+  imports: [RoomsComponent, CourseComponent, ProductsComponent, BookComponent, HeaderComponent, ProductListComponent , ProductListComponent],
   templateUrl: './app.component.html',  
   styleUrl: './app.component.scss',
 })
