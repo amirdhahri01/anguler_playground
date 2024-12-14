@@ -3,7 +3,10 @@ import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
 import { EventEmitter } from '@angular/core';
-
+type def = {
+  id : number,
+  courseName : string
+}
 @Component({
   selector: 'app-book',
   imports: [FormsModule , CommonModule , CustomPipePipe],
@@ -11,6 +14,7 @@ import { EventEmitter } from '@angular/core';
   templateUrl: './book.component.html',
   styleUrl: './book.component.scss'
 })
+
 export class BookComponent {
 // onKeyUp($event: KeyboardEvent) {
 // throw new Error('Method not implemented.');
@@ -81,17 +85,21 @@ export class BookComponent {
   //     ]
   //   }
   // ]
-  courses : object[] = [
+  
+  courses : def[] = [
     {id:1 , courseName: "Java"} ,
-    {id:1 , courseName: "Python"},
-    {id:1 , courseName: "C++"},
-    {id:1 , courseName: "Ruby"},
+    {id:2 , courseName: "Python"},
+    {id:3 , courseName: "C++"},
+    {id:4 , courseName: "Ruby"},
   ]
-  onRemove(course : string){
-    let idx = this.courses.indexOf(course)
+  idx = 5;
+  trackByCourse(index : any, course : any){
+    return course ? course.id : undefined;
+  }
+  onRemove(idx : number){
     this.courses.splice(idx , 1);
   }
   onAdd(){
-    this.courses.push("Far")
+    this.courses.push({id: this.idx++ , courseName:"Far Cry"})
   }  
 }
