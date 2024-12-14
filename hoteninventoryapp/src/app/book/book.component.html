@@ -84,7 +84,7 @@
 <div *ngIf="courses.length > 0 ; then coursesList else noCourses"> 
 -->
 
-<div [hidden]="courses.length == 0">
+<!-- <div [hidden]="courses.length == 0">
     <ul>
         <li *ngFor="let course of courses trackBy:trackByCourse">
             {{course.courseName}}
@@ -94,4 +94,18 @@
 </div>
 <div [hidden]="courses.length > 0">
     No Data Found 404 ):
-</div>
+</div> -->
+<!-- 
+<ul class="nav nav-pills">
+    <li>
+        <a (click)="setView('courses')">Courses</a>
+    </li>
+    <li>
+        <a (click)="setView('certifications')">Certifications</a>
+    </li>
+</ul>
+<div [ngSwitch]="defaultView">
+    <div *ngSwitchCase="'courses'">List Of Courses</div>
+    <div *ngSwitchCase="'certifications'">List Of Certifications</div>
+</div> -->
+<button [style.backgroundColor]="whatcolor? 'yellow' :'red'"></button>
