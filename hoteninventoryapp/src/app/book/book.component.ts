@@ -111,8 +111,5 @@ export class BookComponent {
   //   this.defaultView = view;
   // }
   whatcolor = true;
-  obs =  interval(1000).subscribe(a => {
-    console.log(a);
-    
-  })
+  
 }
