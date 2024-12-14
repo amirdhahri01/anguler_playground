@@ -14,9 +14,9 @@ import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
   styleUrl: './book.component.scss'
 })
 export class BookComponent {
-onKeyUp($event: KeyboardEvent) {
-throw new Error('Method not implemented.');
-}
+// onKeyUp($event: KeyboardEvent) {
+// throw new Error('Method not implemented.');
+// }
 
   // model: BookRepository = new BookRepository();
   // book: Book | undefined = this.model.getIDBook(1);
@@ -33,22 +33,25 @@ throw new Error('Method not implemented.');
   //     "text-white": book?.name != undefined && book?.name == "My Childhod"
   //   };
   // }
-  styles = {
-    color:'white',
-    backgroundColor:"red"
-  }
-  getStyle(){
-    return this.styles;
-  }
-  onClick($event: MouseEvent) {
-    console.log("Div clicked");
-  }
-  name : string = "";
-  data : string = "Amir Dhahri"
-  price : number = 5000
-  date : Date = new Date()
-  onClickDiv($event: MouseEvent) {
-    $event.stopPropagation()
-    console.log("Button clicked");
-  }
+  // styles = {
+  //   color:'white',
+  //   backgroundColor:"red"
+  // }
+  // getStyle(){
+  //   return this.styles;
+  // }
+  // onClick($event: MouseEvent) {
+  //   console.log("Div clicked");
+  // }
+  // name : string = "";
+  // data : string = "Amir Dhahri"
+  // price : number = 5000
+  // date : Date = new Date()
+  // onClickDiv($event: MouseEvent) {
+  //   $event.stopPropagation()
+  //   console.log("Button clicked");
+  // }
+
+  
+
 }
