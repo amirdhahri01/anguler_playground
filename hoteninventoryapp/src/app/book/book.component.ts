@@ -3,13 +3,14 @@ import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
 import { EventEmitter } from '@angular/core';
+import { InputFormDirective } from '../directives/input-form.directive';
 type def = {
   id : number,
   courseName : string
 }
 @Component({
   selector: 'app-book',
-  imports: [FormsModule , CommonModule , CustomPipePipe],
+  imports: [FormsModule , CommonModule , InputFormDirective],
   standalone:true,
   templateUrl: './book.component.html',
   styleUrl: './book.component.scss'
