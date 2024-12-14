@@ -17,9 +17,9 @@ gap-6 relative">
         </div> 
         <span class="absolute top-2 right-3 text-sm font-bold">
             @if(product().stock){
-                {{product().stock}} left
+                <span class="font-bold text-green-600"> {{product().stock}} left</span> 
             }@else{
-                Out of stock
+                <span class="font-bold text-red-600">Out of stock</span>
             }
         </span>
     </div>
