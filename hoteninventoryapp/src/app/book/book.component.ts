@@ -81,8 +81,11 @@ export class BookComponent {
   //     ]
   //   }
   // ]
-  courses : string[] = [
-    "Java" , "Python" , "C++" , "Ruby"
+  courses : object[] = [
+    {id:1 , courseName: "Java"} ,
+    {id:1 , courseName: "Python"},
+    {id:1 , courseName: "C++"},
+    {id:1 , courseName: "Ruby"},
   ]
   onRemove(course : string){
     let idx = this.courses.indexOf(course)
