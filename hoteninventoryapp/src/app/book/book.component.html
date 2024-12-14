@@ -26,4 +26,11 @@
 <button class="btn btn-success" [class.disabled]="disabled">Submit</button> -->
 
 
-<div [style.background-color]="color"></div>
+<!-- <div [ngStyle]="getStyle()"></div> -->
+
+<div (click)="onClickDiv($event)">
+    <button class="btn btn-secondary" (click)="onClick($event)">Click1</button>
+    <button class="btn btn-primary" (click)="onClick($event)">Click2</button>
+</div>
+
+<input type="text" name="" id="" >

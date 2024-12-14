@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { BookRepository } from '../models/repository.model';
 import { Book } from '../models/book.model';
-import { NgClass } from '@angular/common';
+import { NgClass, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-book',
@@ -10,6 +10,10 @@ import { NgClass } from '@angular/common';
   styleUrl: './book.component.scss'
 })
 export class BookComponent {
+onKeyUp($event: KeyboardEvent) {
+throw new Error('Method not implemented.');
+}
+
   // model: BookRepository = new BookRepository();
   // book: Book | undefined = this.model.getIDBook(1);
   // disabled: boolean = true;
@@ -25,5 +29,18 @@ export class BookComponent {
   //     "text-white": book?.name != undefined && book?.name == "My Childhod"
   //   };
   // }
-  color:string = "red"
+  styles = {
+    color:'white',
+    backgroundColor:"red"
+  }
+  getStyle(){
+    return this.styles;
+  }
+  onClick($event: MouseEvent) {
+    console.log("Div clicked");
+  }
+  onClickDiv($event: MouseEvent) {
+    $event.stopPropagation()
+    console.log("Button clicked");
+  }
 }
