@@ -64,7 +64,7 @@
     </li>
 </ul> -->
 
-<button (click)="onAdd()">Add</button>
+<!-- <button (click)="onAdd()">Add</button>
 <ng-template #coursesList>
     <div >
         <ul>
@@ -82,3 +82,16 @@
     </div>
 </ng-template>
 <div *ngIf="courses.length > 0 ; then coursesList else noCourses"> 
+-->
+
+<div [hidden]="courses.length == 0">
+    <ul>
+        <li *ngFor="let course of courses trackBy:trackByCourse">
+            {{course.courseName}}
+            <button (click)="onRemove(course.id)">Remove</button>
+        </li>
+    </ul>
+</div>
+<div [hidden]="courses.length > 0">
+    No Data Found 404 ):
+</div>
