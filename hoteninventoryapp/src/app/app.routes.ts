@@ -5,4 +5,7 @@ export const routes: Routes = [{
     path :"",
     pathMatch:"full",
     component:ProductListComponent
+},{
+    path:"cart",
+    component:
 }];
