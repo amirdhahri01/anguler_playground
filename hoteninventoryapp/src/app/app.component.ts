@@ -12,6 +12,10 @@ import { BookComponent } from './book/book.component';
 })
 
 export class AppComponent {
+onChangeHandler() {
+  console.log("OK.");
+  
+}
   title = 'hoteninventoryapp';
   data:string = "Hello From the othr side"
 }

@@ -1,10 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { BookRepository } from '../models/repository.model';
-import { Book } from '../models/book.model';
+import { Component, Input, Output } from '@angular/core';
 import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { pipe } from 'rxjs';
 import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-book',
@@ -52,7 +50,35 @@ export class BookComponent {
   //   console.log("Button clicked");
   // }
 
-  @Input("isFavorite") data : string = "";
- 
+  // @Input("isFavorite") data : string = "";
+  // @Output() change = new EventEmitter()
 
+  // onClickHandler($event : MouseEvent){
+  //   this.change.emit();
+  // }
+  // names : string[] = ["Amir" , "Dhahri"]
+  peopleByCountry : any[] = [
+    { 
+      Country : "Tunisie",
+      names :[
+        {
+          name:"Amir"
+        },
+        {
+          name:"dhahri"
+        }
+      ]
+    },
+    { 
+      Country : "France",
+      names :[
+        {
+          name:"Nizar"
+        },
+        {
+          name:"Far"
+        }
+      ]
+    }
+  ]
 }
