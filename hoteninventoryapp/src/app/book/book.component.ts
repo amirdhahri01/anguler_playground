@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { CommonModule, NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
@@ -6,6 +6,7 @@ import { EventEmitter } from '@angular/core';
 import { interval } from 'rxjs';
 import { InputFormDirective } from '../directives/input-form.directive';
 import { log } from 'node:console';
+import { provideHttpClient , withInterceptorsFromDi } from '@angular/common/http';
 type def = {
   id : number,
   courseName : string
@@ -18,8 +19,7 @@ type def = {
   styleUrl: './book.component.scss'
 })
 
-export class BookComponent {
-
+export class BookComponent implements OnInit{
 // onKeyUp($event: KeyboardEvent) {
 // throw new Error('Method not implemented.');
 // }
@@ -111,5 +111,13 @@ export class BookComponent {
   //   this.defaultView = view;
   // }
   whatcolor = true;
-  
+  url : string = "https://jsonplaceholder.typicode.com/todos/1"
+  public constructor(){
+
+  }
+  ngOnInit(): void {
+    // this.http.get(this.url).subscribe(response => {
+    //   console.log(response);
+    // })
+  }
 }
