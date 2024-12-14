@@ -2,5 +2,5 @@
     <span class="text-xl">
         My Store
     </span>
-    <app-primary-button [label]="'Cart('+ cart.cart.length + ')'" (btnClicked)="showBtnClick()"></app-primary-button>
+    <app-primary-button [label]="'Cart('+ CartService.cart.length + ')'" (btnClicked)="showBtnClick()"></app-primary-button>
 </div>

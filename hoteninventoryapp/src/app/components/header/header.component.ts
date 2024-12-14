@@ -9,7 +9,7 @@ import { CartService } from '../../services/cart.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  cart = inject(CartService)
+  CartService = inject(CartService)
   showBtnClick(){
     console.log("Clicked");
   }
