@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { BookRepository } from '../models/repository.model';
 import { Book } from '../models/book.model';
-import { NgClass, NgStyle } from '@angular/common';
+import { CommonModule, NgClass, NgStyle } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { pipe } from 'rxjs';
+import { CustomPipePipe } from '../pipes/custom-pipe.pipe';
 
 @Component({
   selector: 'app-book',
-  imports: [],
+  imports: [FormsModule , CommonModule , CustomPipePipe],
+  standalone:true,
   templateUrl: './book.component.html',
   styleUrl: './book.component.scss'
 })
@@ -39,6 +43,10 @@ throw new Error('Method not implemented.');
   onClick($event: MouseEvent) {
     console.log("Div clicked");
   }
+  name : string = "";
+  data : string = "Amir Dhahri"
+  price : number = 5000
+  date : Date = new Date()
   onClickDiv($event: MouseEvent) {
     $event.stopPropagation()
     console.log("Button clicked");
