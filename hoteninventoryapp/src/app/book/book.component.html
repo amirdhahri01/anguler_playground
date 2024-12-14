@@ -108,6 +108,11 @@
     <div *ngSwitchCase="'courses'">List Of Courses</div>
     <div *ngSwitchCase="'certifications'">List Of Certifications</div>
 </div> -->
-<button [style.backgroundColor]="whatcolor? 'yellow' :'red'">
+<button 
+[ngStyle]="{
+    'backgroundColor' : whatcolor? 'yellow' :'red',
+    'color' : !whatcolor? 'yellow' :'red'
+}"
+>
     click me
 </button>
